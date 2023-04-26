@@ -4,7 +4,8 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/android
 
 pool:
-  vmImage: 'macOS-latest'
+  name: search-and-discovery-uat-new
+  demands: agent.name -equals uaen-1aster-devops-pipeline-vm
 
 steps:
 - task: Gradle@2
